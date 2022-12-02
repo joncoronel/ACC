@@ -1,12 +1,13 @@
 import styles from "./Landing.module.scss";
 import Image from "next/image";
-import car from "../../images/car.svg";
 import back from "../../images/background.png";
+import auto from "../../images/auto.svg";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       {/*
+      <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
       <div className={styles.wavy}>
         <svg
           id="visual"
@@ -56,12 +57,16 @@ export default function Hero() {
             Search for everything you need for your car creations
           </p>
         </div>
-        <Image
-          priority="true"
-          alt="Illustration of car shop"
-          src={car}
-          className={styles.image}
-        />
+        <div className={styles.image}>
+          <Image
+            priority="true"
+            alt="Illustration of car shop"
+            src={auto}
+            fill
+            objectFit="contain"
+            objectPosition="center bottom"
+          />
+        </div>
       </div>
     </section>
   );
