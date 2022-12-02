@@ -1,7 +1,7 @@
 import classes from "../styles/Home.module.scss";
 
-import Landing from "../components/sections/Landing";
-import Specialty from "../components/sections/Specialty";
+import Landing from "../components/Sections/Landing";
+import Specialty from "../components/Sections/Specialty";
 
 export default function HomePage() {
   return (
