@@ -1,14 +1,18 @@
 import Nav from "../components/Navigation/Nav";
 import "../styles/globals.css";
-import styles from "../styles/Home.module.scss";
+
+import { Arima } from "@next/font/google";
+
+const arima = Arima({ subsets: ["latin"], variable: "--font-arima" });
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en" className={arima.variable}>
       <head />
+
       <body>
         <Nav />
-        <main className={styles.main}>{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
