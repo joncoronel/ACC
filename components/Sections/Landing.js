@@ -44,7 +44,7 @@ export default function Hero() {
         </svg>
       </div> */}
       <Image
-        priority
+        priority="true"
         alt="Background gradient for landing page"
         src={back}
         className={styles.back}
@@ -57,7 +57,7 @@ export default function Hero() {
           </p>
         </div>
         <Image
-          priority
+          priority="true"
           alt="Illustration of car shop"
           src={car}
           className={styles.image}
