@@ -1,10 +1,9 @@
 .main {
   //adding: 1rem;
-  display: grid;
-  width: 100%;
+  //width: 100vw;
 }
 
-.main > div > * {
+.main > div > section {
   //margin: auto;
   //margin-top: var(--spacer, 2rem);
   //max-width: 90rem;
