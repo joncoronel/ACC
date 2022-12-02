@@ -46,8 +46,8 @@ export default function Hero() {
       <Image
         priority
         alt="Background gradient for landing page"
-        className={styles.back}
         src={back}
+        className={styles.back}
       />
       <div className={styles.content}>
         <div className={styles.text}>
