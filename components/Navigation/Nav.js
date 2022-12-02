@@ -67,6 +67,19 @@ export default function Nav() {
                   <Link href="/">Contact</Link>
                 </li>
               </ul>
+              <ul
+                className={`${classes.navMobile} ${opened ? classes.open : ""}`}
+              >
+                <li className={classes.link}>
+                  <Link href="/">About</Link>
+                </li>
+                <li className={classes.link}>
+                  <Link href="/">Work</Link>
+                </li>
+                <li className={classes.link}>
+                  <Link href="/">Contact</Link>
+                </li>
+              </ul>
               <Burger opened={opened} setOpened={setOpened} small={small} />
             </div>
           </div>
