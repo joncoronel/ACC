@@ -11,7 +11,7 @@ export default function Nav() {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.pageYOffset > 0) {
+      if (window.pageYOffset > 60) {
         if (!small) {
           console.log("hello");
           setSmall(true);

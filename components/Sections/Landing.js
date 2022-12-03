@@ -64,7 +64,7 @@ export default function Hero() {
             src={auto}
             fill
             objectFit="contain"
-            objectPosition="center bottom"
+            objectPosition="center"
           />
         </div>
       </div>
