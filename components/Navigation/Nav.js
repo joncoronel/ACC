@@ -4,6 +4,7 @@ import classes from "./Nav.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Burger from "../Navigation/misc/Burger";
+import throttle from "lodash.throttle";
 
 export default function Nav() {
   const [small, setSmall] = useState(false);
@@ -11,6 +12,7 @@ export default function Nav() {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
+      console.log("scrolled");
       if (window.pageYOffset > 60) {
         if (!small) {
           console.log("hello");
@@ -35,10 +37,12 @@ export default function Nav() {
 
   useEffect(() => {
     controlNavbar();
+
+    const throttledScroll = throttle(controlNavbar, 100);
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
+      window.addEventListener("scroll", throttledScroll);
       return () => {
-        window.removeEventListener("scroll", controlNavbar);
+        window.removeEventListener("scroll", throttledScroll);
       };
     }
   }, [small]);
