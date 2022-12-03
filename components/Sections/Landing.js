@@ -49,7 +49,6 @@ export default function Hero() {
         alt="Background gradient for landing page"
         src={back}
         className={styles.back}
-        placeholder="blur"
       />
       <div className={styles.content}>
         <div className={styles.text}>
