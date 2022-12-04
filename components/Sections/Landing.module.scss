@@ -10,6 +10,12 @@
   min-width: 100%;
   color: black;
   padding-bottom: 4rem;
+  background: rgb(241, 245, 249);
+  background: radial-gradient(
+    circle,
+    rgba(241, 245, 249, 1) 0%,
+    rgba(195, 244, 255, 1) 100%
+  );
 }
 
 .content {

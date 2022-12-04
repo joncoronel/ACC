@@ -44,12 +44,7 @@ export default function Hero() {
           </g>
         </svg>
       </div> */}
-      <Image
-        priority="true"
-        alt="Background gradient for landing page"
-        src={back}
-        className={styles.back}
-      />
+     
       <div className={styles.content}>
         <div className={styles.text}>
           <h1 className={styles.title}>Welcome Here</h1>

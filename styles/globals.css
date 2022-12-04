@@ -7,7 +7,8 @@
   --color-primary: hsla(207, 100%, 6%, 1);
 
   --overlay-color: hsl(204, 100%, 10%, 0.4);
-  --color-shadow: hsla(205, 100%, 4%, 0.4);
+  --color-shadow: hsla(205, 100%, 4%, 0.1);
+  --color-shadow-dark: hsla(205, 100%, 4%, 0.7);
 }
 
 html,

@@ -12,15 +12,12 @@ export default function Nav() {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      console.log("scrolled");
       if (window.pageYOffset > 60) {
         if (!small) {
-          console.log("hello");
           setSmall(true);
         }
       } else {
         if (small) {
-          console.log("damn");
           setSmall(false);
         }
       }
