@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Burger from "../Navigation/misc/Burger";
 import throttle from "lodash.throttle";
+import Image from "next/image";
+import Logo from "../../images/logo-5.svg";
 
 export default function Nav() {
   const [small, setSmall] = useState(false);
@@ -53,7 +55,16 @@ export default function Nav() {
       <header className={`${classes.header}  ${small ? classes.scrolled : ""}`}>
         <nav className={classes.nav}>
           <div className={classes.container}>
-            <div className={classes.logo}>Logo</div>
+            <div className={classes.logo}>
+              <Image
+                className={classes.icon}
+                priority="true"
+                alt="Website Logo"
+                src={Logo}
+                fill
+              />
+            </div>
+
             <div className={classes.content}>
               <ul
                 className={`${classes.navLinks} ${opened ? classes.open : ""}`}

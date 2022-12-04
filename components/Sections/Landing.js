@@ -1,6 +1,5 @@
 import styles from "./Landing.module.scss";
 import Image from "next/image";
-import back from "../../images/background.png";
 import auto from "../../images/auto.svg";
 
 export default function Hero() {
@@ -44,7 +43,7 @@ export default function Hero() {
           </g>
         </svg>
       </div> */}
-     
+
       <div className={styles.content}>
         <div className={styles.text}>
           <h1 className={styles.title}>Welcome Here</h1>
