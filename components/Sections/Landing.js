@@ -5,44 +5,7 @@ import auto from "../../images/auto.svg";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/*
-      <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
-      <div className={styles.wavy}>
-        <svg
-          id="visual"
-          viewBox="0 0 900 600"
-          width="900"
-          height="600"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-        >
-          <defs>
-            <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
-              <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              ></feBlend>
-              <feGaussianBlur
-                stdDeviation="161"
-                result="effect1_foregroundBlur"
-              ></feGaussianBlur>
-            </filter>
-          </defs>
-          <rect width="900" height="600" fill="#add1e5"></rect>
-          <g filter="url(#blur1)">
-            <circle cx="273" cy="170" fill="#f1f5f9" r="357"></circle>
-            <circle cx="463" cy="568" fill="#add1e5" r="357"></circle>
-            <circle cx="762" cy="423" fill="#f1f5f9" r="357"></circle>
-            <circle cx="72" cy="187" fill="#f1f5f9" r="357"></circle>
-            <circle cx="453" cy="127" fill="#add1e5" r="357"></circle>
-            <circle cx="393" cy="379" fill="#f1f5f9" r="357"></circle>
-          </g>
-        </svg>
-      </div> */}
+      <div className={styles.top}></div>
 
       <div className={styles.content}>
         <div className={styles.text}>
