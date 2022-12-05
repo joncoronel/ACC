@@ -12,7 +12,6 @@
   padding-bottom: 4rem;
 }
 
-
 .top {
   background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -106,6 +105,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .top {
+    filter: blur(10rem);
+  }
   .hero {
     height: 50rem;
   }
