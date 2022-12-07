@@ -1,7 +1,8 @@
+import RootStyleRegistry from "./emotion";
+
 import Nav from "../components/Navigation/Nav";
 import NewFooter from "../components/Footer/NewFooter";
 import "../styles/globals.css";
-import RootStyleRegistry from "./emotion";
 
 import { Arima } from "@next/font/google";
 

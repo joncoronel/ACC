@@ -2,12 +2,11 @@
 import { CacheProvider } from "@emotion/react";
 import { useEmotionCache, MantineProvider } from "@mantine/core";
 import { useServerInsertedHTML } from "next/navigation";
+import { Arima } from "@next/font/google";
 
-export default function RootStyleRegistry({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const arima = Arima({ subsets: ["latin"], variable: "--font-arima" });
+
+export default function RootStyleRegistry({ children }) {
   const cache = useEmotionCache();
   cache.compat = true;
 
@@ -22,7 +21,9 @@ export default function RootStyleRegistry({
 
   return (
     <CacheProvider value={cache}>
-      <MantineProvider>{children}</MantineProvider>
+      <MantineProvider withGlobalStyles theme={{ fontFamily: arima }}>
+        {children}
+      </MantineProvider>
     </CacheProvider>
   );
 }
