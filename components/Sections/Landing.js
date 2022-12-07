@@ -9,7 +9,10 @@ export default function Hero() {
 
       <div className={styles.content}>
         <div className={styles.text}>
-          <h1 className={styles.title}>Welcome Here</h1>
+          <h1 className={styles.title}>
+            Fetch Data. <br></br>Detect Risk. <br></br> Retrieve<br></br>{" "}
+            Quotes.
+          </h1>
           <p className={styles.desc}>
             Search for everything you need for your car creations
           </p>
