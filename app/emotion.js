@@ -21,9 +21,7 @@ export default function RootStyleRegistry({ children }) {
 
   return (
     <CacheProvider value={cache}>
-      <MantineProvider withGlobalStyles theme={{ fontFamily: arima }}>
-        {children}
-      </MantineProvider>
+      <MantineProvider>{children}</MantineProvider>
     </CacheProvider>
   );
 }
