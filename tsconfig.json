@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Sections/Offer/Offer.js"  ],
+, "components/Sections/Offer/Offer.js", "app/emotion.js"  ],
   "exclude": [
     "node_modules"
   ]

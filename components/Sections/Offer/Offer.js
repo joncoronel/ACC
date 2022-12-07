@@ -17,6 +17,7 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.sm,
     width: "100%",
   },
+  label: { color: "red" },
 
   item: {
     backgroundColor:
@@ -70,8 +71,11 @@ export default function Offer() {
               }
             }}
             variant="separated"
-            classNames={{ label: `${styles.itemTitle}` }}
-            className={classes.root}
+            classNames={{
+              label: `${styles.itemTitle}`,
+              item: `${styles.item}`,
+            }}
+            className={styles.rootAccordion}
           >
             <Accordion.Item value="electronics">
               <Accordion.Control>Custom Electronics</Accordion.Control>
@@ -88,27 +92,29 @@ export default function Offer() {
             </Accordion.Item>
           </Accordion>
         </div>
-        <div className={styles.images}>
-          <div
-            className={`${styles.image} ${
-              value === "electronics" ? styles.active : ""
-            }`}
-          >
-            <Image className={styles.innerImage} fill src={image1} />
-          </div>
-          <div
-            className={`${styles.image} ${
-              value === "speaker" ? styles.active : ""
-            }`}
-          >
-            <Image className={styles.innerImage} fill src={image2} />
-          </div>
-          <div
-            className={`${styles.image} ${
-              value === "wheel" ? styles.active : ""
-            }`}
-          >
-            <Image className={styles.innerImage} fill src={image3} />
+        <div className={styles.imageBox}>
+          <div className={styles.images}>
+            <div
+              className={`${styles.image} ${
+                value === "electronics" ? styles.active : ""
+              }`}
+            >
+              <Image className={styles.innerImage} fill src={image1} />
+            </div>
+            <div
+              className={`${styles.image} ${
+                value === "speaker" ? styles.active : ""
+              }`}
+            >
+              <Image className={styles.innerImage} fill src={image2} />
+            </div>
+            <div
+              className={`${styles.image} ${
+                value === "wheel" ? styles.active : ""
+              }`}
+            >
+              <Image className={styles.innerImage} fill src={image3} />
+            </div>
           </div>
         </div>
       </div>
