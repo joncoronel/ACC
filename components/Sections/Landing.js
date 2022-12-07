@@ -5,8 +5,6 @@ import auto from "../../images/auto.svg";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.top}></div>
-
       <div className={styles.content}>
         <div className={styles.text}>
           <h1 className={styles.title}>
