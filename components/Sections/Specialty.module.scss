@@ -11,6 +11,7 @@
   overflow: hidden;
 
   color: black;
+
   //z-index: 0;
 }
 
@@ -59,6 +60,7 @@
   display: flex;
   width: 6rem;
   height: 6rem;
+  backdrop-filter: blur(0px);
 }
 .text {
   display: flex;

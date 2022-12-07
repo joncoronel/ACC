@@ -54,47 +54,40 @@ export default function Nav() {
       ></div>
       <header className={`${classes.header}  ${small ? classes.scrolled : ""}`}>
         <nav className={classes.nav}>
-          <div className={classes.container}>
-            <div className={classes.logo}>
-              <Image
-                className={classes.icon}
-                priority="true"
-                alt="Website Logo"
-                src={Logo}
-                fill
-              />
-            </div>
-
-            <div className={classes.content}>
-              <ul
-                className={`${classes.navLinks} ${opened ? classes.open : ""}`}
-              >
-                <li className={classes.link}>
-                  <Link href="/">About</Link>
-                </li>
-                <li className={classes.link}>
-                  <Link href="/">Work</Link>
-                </li>
-                <li className={classes.link}>
-                  <Link href="/">Contact</Link>
-                </li>
-              </ul>
-              <ul
-                className={`${classes.navMobile} ${opened ? classes.open : ""}`}
-              >
-                <li className={classes.link}>
-                  <Link href="/">About</Link>
-                </li>
-                <li className={classes.link}>
-                  <Link href="/">Work</Link>
-                </li>
-                <li className={classes.link}>
-                  <Link href="/">Contact</Link>
-                </li>
-              </ul>
-              <Burger opened={opened} setOpened={setOpened} small={small} />
-            </div>
+          <div className={classes.logo}>
+            <Image
+              className={classes.icon}
+              priority="true"
+              alt="Website Logo"
+              src={Logo}
+              fill
+            />
           </div>
+
+          <ul className={`${classes.navLinks} ${opened ? classes.open : ""}`}>
+            <li className={classes.link}>
+              <Link href="/">About</Link>
+            </li>
+            <li className={classes.link}>
+              <Link href="/">Work</Link>
+            </li>
+            <li className={classes.link}>
+              <Link href="/">Contact</Link>
+            </li>
+          </ul>
+          <button className={classes.navbtn}>Contact Us</button>
+          <ul className={`${classes.navMobile} ${opened ? classes.open : ""}`}>
+            <li className={classes.link}>
+              <Link href="/">About</Link>
+            </li>
+            <li className={classes.link}>
+              <Link href="/">Work</Link>
+            </li>
+            <li className={classes.link}>
+              <Link href="/">Contact</Link>
+            </li>
+          </ul>
+          <Burger opened={opened} setOpened={setOpened} small={small} />
         </nav>
       </header>
     </>
