@@ -1,6 +1,7 @@
 import Nav from "../components/Navigation/Nav";
 import NewFooter from "../components/Footer/NewFooter";
 import "../styles/globals.css";
+import RootStyleRegistry from "./emotion";
 
 import { Arima } from "@next/font/google";
 
@@ -12,9 +13,11 @@ export default function RootLayout({ children }) {
       <head />
 
       <body>
-        <Nav />
-        <main>{children}</main>
-        <NewFooter />
+        <RootStyleRegistry>
+          <Nav />
+          <main>{children}</main>
+          <NewFooter />
+        </RootStyleRegistry>
       </body>
     </html>
   );
