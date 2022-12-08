@@ -13,15 +13,15 @@ const signika = Signika({ subsets: ["latin"], variable: "--font-signika" });
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${arima.variable} ${signika.variable}`}>
-      <head />
+      <RootStyleRegistry>
+        <head />
 
-      <body>
-        <RootStyleRegistry>
+        <body>
           <Nav />
           <main>{children}</main>
           <NewFooter />
-        </RootStyleRegistry>
-      </body>
+        </body>
+      </RootStyleRegistry>
     </html>
   );
 }
