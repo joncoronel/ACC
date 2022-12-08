@@ -98,12 +98,12 @@
   }
 
   [data-active] button {
-    background-color: hsla(0, 0%, 92%, 1);
+    background-color: var(--color-light);
     border-radius: 8px;
   }
 
   .item:not([data-active]) button:hover {
-    //background-color: red;
+    background-color: var(--color-hover);
     border-radius: 8px;
   }
 }

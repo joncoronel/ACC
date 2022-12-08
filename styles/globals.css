@@ -1,22 +1,26 @@
 :root {
-  --color-light: #6cb2b1;
-  --color-darkest: #1b2226;
-  --color-lightest: #7bb3b5;
-  --color-dark: rgb(65, 75, 83);
-
-  --color-primary: hsla(207, 100%, 6%, 1);
-
   --overlay-color: hsl(204, 100%, 10%, 0.4);
   --color-shadow: hsla(205, 100%, 4%, 0.1);
   --color-shadow-dark: hsla(205, 100%, 4%, 0.7);
+
+  --color-lightest: hsl(199, 72%, 96%);
+  --color-light: hsl(199, 72%, 89%);
+  --color-mid: hsl(213, 18%, 47%);
+  --color-dark: hsl(197, 95%, 14%);
+  --color-darkest: hsl(197, 95%, 8%);
+  --color-accent: hsl(353, 36%, 46%);
+  --color-accent-light: hsl(353, 50%, 80%);
+  --color-black: hsl(203, 69%, 5%);
+  --color-white: hsl(199, 70%, 96%);
+  --color-hover: hsla(199, 72%, 89%, .3);
 }
 
 html,
 body {
-  background-color: #f1f5f9;
+  background-color: var(--color-white);
   padding: 0;
   margin: 0;
-  font-family: var(--font-arima), sans-serif;
+  font-family: var(--font-signika), sans-serif;
   color: black;
 }
 
@@ -26,7 +30,10 @@ a {
 }
 
 p {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-signika), sans-serif;
+}
+button {
+  font-family: var(--font-signika), sans-serif;
 }
 
 h1,
