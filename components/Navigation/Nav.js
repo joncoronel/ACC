@@ -86,7 +86,7 @@ export default function Nav() {
             <li className={classes.link}>
               <Link href="/">Contact</Link>
             </li>
-            <li className={classes.link}>
+            <li>
               <button className={`${classes.navbtn} ${classes.navbtnMobile}`}>
                 Contact Us
               </button>
