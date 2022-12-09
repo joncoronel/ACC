@@ -50,9 +50,8 @@ export default function Testimonials() {
   ];
 
   const listReviews = reviews.map((rev) => (
-    <SwiperSlide className={styles.slide}>
+    <SwiperSlide key={rev.name} className={styles.slide}>
       <TestCard
-        key={rev.name}
         name={rev.name}
         quote={rev.review}
         image={rev.image}
