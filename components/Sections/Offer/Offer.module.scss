@@ -86,6 +86,11 @@
   transition-delay: 0.2s;
 }
 
+.rootAccordion h3 {
+  font-family: var(--font-signika), sans-serif;
+  color: var(--color-darkest);
+}
+
 ///--------------------------------------------Mobile Images--------------------------///////
 .mobileImagebox {
   margin: 2rem 0rem;
