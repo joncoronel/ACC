@@ -1,7 +1,6 @@
 import styles from "./TestCard.module.scss";
 import Image from "next/image";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { FaYelp } from "react-icons/fa";
 
 export default function TestCard(props) {
   const noStars = 5 - props.rating;
@@ -33,9 +32,9 @@ export default function TestCard(props) {
             className={styles.innerImage}
             src={props.image}
             alt="Picture of the author"
-            sizes="(max-width: 768px) 100vw,
-            (max-width: 1200px) 50vw,
-            33vw"
+            sizes="(max-width: 768px) 40vw,
+              (max-width: 1200px) 40vw,
+              40vw"
             fill
           />
         </div>
