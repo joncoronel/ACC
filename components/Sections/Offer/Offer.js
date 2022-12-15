@@ -13,9 +13,8 @@ export default function Offer() {
 
   return (
     <section className={styles.offer}>
-      <div className={styles.title}>
-        Find everything you need for you car creations
-      </div>
+      <h3 className={styles.subtitle}>Contact Us</h3>
+      <h2 className={styles.title}>Get In Touch With Us</h2>
       <div className={styles.container}>
         <div className={styles.accordion}>
           <Accordion

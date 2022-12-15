@@ -4,6 +4,7 @@ import Landing from "../components/Sections/Landing";
 import Specialty from "../components/Sections/Specialty";
 import Offer from "../components/Sections/Offer/Offer.js";
 import Testimonials from "../components/Sections/Testimonials/Testimonials";
+import Contact from "../components/Sections/Contact/Contact";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Specialty />
       <Offer />
       <Testimonials />
+      <Contact/>
     </div>
   );
 }

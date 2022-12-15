@@ -27,21 +27,21 @@ export default function Testimonials() {
       rating: 5,
     },
     {
-      name: "Larry L.",
+      name: "Larry Lth.",
       image: User1,
       review:
         "Time heals all things. The guys are Advanced truly took the effort to correct the past and right the future. They offered fair pricing and again they have earned my trust and business. These guys knows their stuff and they know their gear for sure. I highly recommend them once again!",
       rating: 4,
     },
     {
-      name: "Larry L.",
+      name: "Larry Lfh.",
       image: User1,
       review:
         "Time heals all things. The guys are Advanced truly took the effort to correct the past and right the future. They offered fair pricing and again they have earned my trust and business. These guys knows their stuff and they know their gear for sure. I highly recommend them once again!",
       rating: 4,
     },
     {
-      name: "Larry L.",
+      name: "Larry Lgh.",
       image: User1,
       review:
         "Time heals all things. The guys are Advanced truly took the effort to correct the past and right the future. They offered fair pricing and again they have earned my trust and business. These guys knows their stuff and they know their gear for sure. I highly recommend them once again!",
@@ -63,6 +63,7 @@ export default function Testimonials() {
     <section className={styles.Testimonials}>
       <div className={styles.banner}></div>
       <div className={styles.container}>
+        <h3 className={styles.subtitle}>Satisfied Customers</h3>
         <h2 className={styles.title}>Kind words from customers</h2>
 
         <Swiper

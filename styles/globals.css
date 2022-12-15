@@ -8,11 +8,15 @@
   --color-mid: hsl(213, 18%, 47%);
   --color-dark: hsl(197, 95%, 14%);
   --color-darkest: hsl(197, 95%, 8%);
-  --color-accent: hsl(353, 36%, 46%);
+  --color-accent: hsl(353, 45%, 55%);
   --color-accent-light: hsl(353, 50%, 80%);
   --color-black: hsl(203, 69%, 5%);
-  --color-white: hsl(199, 70%, 96%);
-  --color-hover: hsla(199, 72%, 89%, .3);
+  --color-white: hsl(199, 70%, 99%);
+  --color-hover: hsla(199, 72%, 89%, 0.3);
+  --color-valid: hsl(199, 72%, 70%);
+  --color-dark-trans: hsla(197, 95%, 14%, 0.2);
+  --color-white-trans: hsla(199, 70%, 99%, 0.2);
+  --color-darkest-trans: hsla(197, 95%, 8%);
 }
 
 html,
@@ -29,10 +33,20 @@ a {
   text-decoration: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 p {
   font-family: var(--font-signika), sans-serif;
 }
 button {
+  font-family: var(--font-signika), sans-serif;
+}
+
+label,
+input {
   font-family: var(--font-signika), sans-serif;
 }
 
