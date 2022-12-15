@@ -29,7 +29,15 @@ export default function TestCard(props) {
       <div className={styles.text}>{props.quote}</div>
       <div className={styles.person}>
         <div className={styles.image}>
-          <Image src={props.image} alt="Picture of the author" fill />
+          <Image
+            className={styles.innerImage}
+            src={props.image}
+            alt="Picture of the author"
+            sizes="(max-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
+            fill
+          />
         </div>
         <div className={styles.name}>{props.name}</div>
       </div>

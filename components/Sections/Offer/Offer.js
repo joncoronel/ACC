@@ -49,7 +49,14 @@ export default function Offer() {
 
                 <div className={styles.mobileImagebox}>
                   <div className={styles.mobileImage}>
-                    <Image className={styles.innerImage} fill src={image1} />
+                    <Image
+                      className={styles.innerImage}
+                      fill
+                      src={image1}
+                      sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                    />
                   </div>
                 </div>
               </Accordion.Panel>
@@ -70,7 +77,14 @@ export default function Offer() {
                 </p>
                 <div className={styles.mobileImagebox}>
                   <div className={styles.mobileImage}>
-                    <Image className={styles.innerImage} fill src={image2} />
+                    <Image
+                      className={styles.innerImage}
+                      fill
+                      src={image2}
+                      sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                    />
                   </div>
                 </div>
               </Accordion.Panel>
@@ -90,7 +104,14 @@ export default function Offer() {
                 </p>
                 <div className={styles.mobileImagebox}>
                   <div className={styles.mobileImage}>
-                    <Image className={styles.innerImage} fill src={image3} />
+                    <Image
+                      className={styles.innerImage}
+                      fill
+                      src={image3}
+                      sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                    />
                   </div>
                 </div>
               </Accordion.Panel>
@@ -104,21 +125,42 @@ export default function Offer() {
                 value === "electronics" ? styles.active : ""
               }`}
             >
-              <Image className={styles.innerImage} fill src={image1} />
+              <Image
+                className={styles.innerImage}
+                fill
+                src={image1}
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              />
             </div>
             <div
               className={`${styles.image} ${
                 value === "speaker" ? styles.active : ""
               }`}
             >
-              <Image className={styles.innerImage} fill src={image2} />
+              <Image
+                className={styles.innerImage}
+                fill
+                src={image2}
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              />
             </div>
             <div
               className={`${styles.image} ${
                 value === "wheel" ? styles.active : ""
               }`}
             >
-              <Image className={styles.innerImage} fill src={image3} />
+              <Image
+                className={styles.innerImage}
+                fill
+                src={image3}
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              />
             </div>
           </div>
         </div>
