@@ -7,6 +7,8 @@ import contact from "../../../images/contactnew.svg";
 import Image from "next/image";
 import Map from "./Map";
 import { useInView } from "react-intersection-observer";
+import { FaFacebook, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import { AiFillMail, AiFillPhone } from "react-icons/ai";
 
 const MyTextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
@@ -52,6 +54,12 @@ const MyAreaInput = ({ label, ...props }) => {
 
 export default function Contact() {
   const { ref: myRef, inView } = useInView({ triggerOnce: true });
+  const handleClick = () => {
+    window.open(
+      "https://www.google.com/maps/place/Advanced+Car+Creations/@33.7750044,-117.9041331,17z/data=!4m12!1m6!3m5!1s0x80dcd81863a56d43:0x8b389526507b4adf!2sAdvanced+Car+Creations!8m2!3d33.7749616!4d-117.9019493!3m4!1s0x80dcd81863a56d43:0x8b389526507b4adf!8m2!3d33.7749616!4d-117.9019493"
+    );
+  };
+
   return (
     <section ref={myRef} className={styles.Contact}>
       <div className={styles.container}>
@@ -116,7 +124,40 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles.info}>
-          <div className={styles.socials}></div>
+          <div className={styles.socials}>
+            <div className={styles.address} onClick={handleClick}>
+              <span>
+                <FaMapMarkerAlt />
+              </span>
+              <p>13231 W Garden Grove Blvd, Garden Grove, CA 92843</p>
+            </div>
+            <div className={styles.number}>
+              <span>
+                <AiFillPhone />
+              </span>
+              <a href="tel:(714) 971-1012">(714) 971-1012</a>
+            </div>
+            <div className={styles.email}>
+              <span>
+                <AiFillMail />
+              </span>
+              <a href="mailto:contact@mail.com">contact@mail.com</a>
+            </div>
+            <div className={styles.media}>
+              <a
+                href="https://www.facebook.com/advanced-car-creations-114086455269891/"
+                aria-label={"Visit our Facebook Page"}
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/advancedcarcreations/?hl=en"
+                aria-label={"Visit our Instagram Page"}
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
           <div className={styles.map}>
             {!inView ? <div>Loading...</div> : <Map />}
           </div>
