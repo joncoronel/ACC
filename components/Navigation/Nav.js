@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Burger from "../Navigation/misc/Burger";
 import throttle from "lodash.throttle";
 import Image from "next/image";
-import Logo from "../../images/logo-5.svg";
+import Logo from "../../images/acclogofinal.svg";
 
 export default function Nav() {
   const [small, setSmall] = useState(false);
