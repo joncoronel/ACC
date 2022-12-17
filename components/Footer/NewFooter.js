@@ -12,7 +12,8 @@ export default function NewFooter() {
               13231 W Garden Grove Blvd<br></br>Garden Grove, CA <br></br>92843
             </div>
             <div className={classes.hours}>
-              Mon - Fri | 10am - 7pm <br></br>Sun | Closed
+              Mon - Fri | 10am - 7pm <br></br>
+              <br></br>Sun | Closed
             </div>
           </div>
         </div>
