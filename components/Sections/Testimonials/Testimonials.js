@@ -5,10 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import TestCard from "./TestCard";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 import User1 from "../../../images/users/user1.jpg";
 import User2 from "../../../images/users/user2.jpg";
 import User3 from "../../../images/users/user3.jpg";
+import "./Swiper.scss";
 
 export default function Testimonials() {
   const reviews = [
@@ -67,6 +69,11 @@ export default function Testimonials() {
         <h2 className={styles.title}>Kind words from customers</h2>
 
         <Swiper
+          style={{
+        
+            "--swiper-navigation-size": "3rem",
+          }}
+          navigation={true}
           slidesPerView={1.5}
           spaceBetween={10}
           pagination={{
@@ -90,7 +97,7 @@ export default function Testimonials() {
               spaceBetween: 50,
             },
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Navigation]}
           className={styles.swiper}
         >
           {listReviews}
