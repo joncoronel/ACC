@@ -23,10 +23,9 @@ export default function About() {
           For product information and prices feel free to contact them at (714)
           971-1945 or (714) 971-1012.
         </p>
-        <div className={styles.other}>
-          <div className={styles.imageWrapper}>
-            <Image src={mainImage} fill />
-          </div>
+
+        <div className={styles.imageWrapper}>
+          <Image className={styles.image} src={mainImage} fill />
         </div>
       </div>
     </section>

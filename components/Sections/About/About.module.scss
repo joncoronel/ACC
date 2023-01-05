@@ -42,7 +42,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  //gap: 1rem;
+  gap: 2rem;
   //flex-direction: column;
 }
 
@@ -52,32 +52,39 @@
   font-size: 1.1rem;
 }
 
-.other {
+.imageWrapper {
   flex: 1 1 50%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.imageWrapper {
-  position: relative;
-  display: flex;
-
-  height: 20rem;
-  width: 20rem;
+  height: 40rem;
+  //width: 20rem;
 
   overflow: hidden;
-  border-radius: 10px;
+
   //border-radius: 8px;
 }
 
 .image {
-  //object-fit: contain;
-  max-width: 100%;
+  object-fit: contain;
+  //max-width: 100%;
+  //overflow-clip-margin: content-box;
+  border-radius: 10px;
+  //overflow: clip;
+  max-width: fit-content;
+  margin-left: auto;
+
+  //min-width: fit-content;
 }
 
 @media only screen and (max-width: 900px) {
   .container {
     flex-wrap: wrap;
+  }
+
+  .image {
+    margin: auto;
   }
 }
