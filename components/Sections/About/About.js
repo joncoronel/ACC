@@ -9,7 +9,7 @@ export default function About() {
       <h2 className={styles.title}>This is who we are</h2>
       <div className={styles.container}>
         <p className={styles.text}>
-          Looking for professional installation, custom work, exceptional
+          {`Looking for professional installation, custom work, exceptional
           prices, and guaranteed satisfaction? Well, you’ve come to the right
           place. Started in 1992, by three long time friends (Jose, Robert &
           George), Advanced Car Creations- aka: ACC, has risen to the top of
@@ -21,7 +21,7 @@ export default function About() {
           others. ACC is also an authorized dealer. For car audio enthusiasts,
           ACC is the place to be. All of your car audio dreams can come true.
           For product information and prices feel free to contact them at (714)
-          971-1945 or (714) 971-1012.
+          971-1945 or (714) 971-1012.`}
         </p>
 
         <div className={styles.imageWrapper}>
