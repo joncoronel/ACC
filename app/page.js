@@ -12,7 +12,6 @@ export default function HomePage() {
     <div className={classes.spacing}>
       <Landing />
       <About />
-
       <Offer />
       <Testimonials />
       <Contact />
