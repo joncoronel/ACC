@@ -1,0 +1,49 @@
+.animatedWave {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: transparent;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.waveWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wave {
+  background: url(../../images/smallwaves.svg) repeat-x;
+  position: absolute;
+  top: 0;
+  width: 3200px;
+  height: 50px;
+  -webkit-animation: wave 40s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 40s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@media (min-width: 48em) {
+  .animatedWave {
+    height: 120px;
+    margin-top: -90px;
+  }
+  .wave {
+    background: url(../../images/waves.svg) repeat-x;
+    width: 6400px;
+    height: 120px;
+    -webkit-animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  }
+}

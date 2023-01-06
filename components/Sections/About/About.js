@@ -1,6 +1,6 @@
 import styles from "./About.module.scss";
 import Image from "next/image";
-import mainImage from "../../../images/shop.jpg";
+import mainImage from "../../../images/shop.webp";
 
 export default function About() {
   return (
