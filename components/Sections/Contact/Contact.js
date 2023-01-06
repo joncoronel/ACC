@@ -14,9 +14,18 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
   const { ref: myRef, inView } = useInView({ triggerOnce: true });
 
-
   return (
     <section ref={myRef} className={styles.Contact}>
+      <div className={styles.background}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div className={styles.container}>
         <h3 className={styles.subtitle}>Contact Us</h3>
         <h2 className={styles.title}>Get In Touch With Us</h2>
